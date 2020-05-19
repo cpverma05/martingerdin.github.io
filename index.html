@@ -1,54 +1,57 @@
 <!DOCTYPE html>
 <html>
-<head>
-<title>Records</title>
-<link rel = "stylesheet" type = "text/css" href = "https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
-<script src="//cdn.jsdelivr.net/npm/pouchdb@7.1.1/dist/pouchdb.min.js"></script>
-<script src="js/app.js"></script>
-</head>
-<body>
-
-<section class="hero is-primary">
-  <div class="hero-body">
-    <div class="container">
-      <h1 class="title">
-        Record editor
-      </h1>
-    </div>
-  </div>
-</section>
-
-  <section class="section">
-    <div class="container">
-      <h2 class="subtitle">
-      New record
-      </h2>
-    </div>
-  </section>
-
-  <section class="section">
-
-<div class="field">
-  <label class="label">ID</label>
-  <div class="control">
-    <input id="id" class="input" type="number" placeholder="e.g 1">
-  </div>
-</div>
-
-<div class="field">
-  <label class="label">Name</label>
-  <div class="control">
-    <input id="name" class="input" type="text" placeholder="e.g Alex Smith">
-  </div>
-</div>
-
-<div class="field">
-  <label class="label">Age</label>
-  <div class="control">
-    <input id="age" class="input" type="number" placeholder="e.g. 12">
-  </div>
-</div>
-</section>
-
-</body>
+   <head>
+      <title>Records</title>
+      <link rel = "stylesheet" type = "text/css" href = "https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
+      <script src="//cdn.jsdelivr.net/npm/pouchdb@7.1.1/dist/pouchdb.min.js"></script>
+      <script src="js/app.js"></script>
+   </head>
+   <body>
+      <section class="hero is-primary">
+         <div class="hero-body">
+            <div class="container">
+               <h1 class="title">
+                  Record editor
+               </h1>
+            </div>
+         </div>
+      </section>
+      <!--
+         **********
+         New record
+         **********
+         -->
+      <section class="section">
+         <div class="container">
+            <h2 class="subtitle">
+               New record
+            </h2>
+         </div>
+         <div class="field">
+            <label class="label">ID</label>
+            <div class="control">
+               <input id="id" class="input" type="number" placeholder="e.g 1">
+            </div>
+         </div>
+         <div class="field">
+            <label class="label">Name</label>
+            <div class="control">
+               <input id="name" class="input" type="text" placeholder="e.g Alex Smith">
+            </div>
+         </div>
+         <div class="field">
+            <label class="label">Age</label>
+            <div class="control">
+               <input id="age" class="input" type="number" placeholder="e.g. 12">
+            </div>
+         </div>
+         <div class="field">
+            <p class="control">
+               <button id="save" class="button is-success">
+               Save record
+               </button>
+            </p>
+         </div>
+      </section>
+   </body>
 </html>
